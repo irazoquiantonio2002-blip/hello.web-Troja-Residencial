@@ -3,36 +3,34 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Troja Residencial | Residencias premium y bienestar habitacional</title>
-  <meta name="description" content="Troja Residencial desarrolla y gestiona residencias premium con arquitectura cuidada, amenidades de bienestar, sostenibilidad y espacios personalizados.">
-  <meta name="keywords" content="Troja Residencial, residencias premium, departamentos de lujo, desarrollo residencial, amenidades, bienestar habitacional">
-  <meta property="og:title" content="Troja Residencial | Residencias premium">
-  <meta property="og:description" content="Un estilo de vida elevado: diseño arquitectónico, sostenibilidad, amenidades y gestión residencial de alto nivel.">
+  <title>Troja Residencial | Fraccionamiento cerrado en el sur de Juárez</title>
+  <meta name="description" content="Troja Residencial: fraccionamiento cerrado en el sur de Juárez con casas de una y dos plantas, modelos Krakov y Moldava. Seguridad, cercanía y diseño para tu familia.">
+  <meta name="keywords" content="Troja Residencial, casas Juárez, fraccionamiento cerrado, modelo Krakov, modelo Moldava, sur de Juárez, casas en venta Juárez">
+  <meta property="og:title" content="Troja Residencial | Tu nuevo hogar en el sur de Juárez">
+  <meta property="og:description" content="Fraccionamiento cerrado con casas de 112 a 168 m². Agenda tu cita y conoce los modelos Krakov y Moldava.">
+  <meta property="og:image" content="img/hero-street.jpg">
   <meta property="og:type" content="website">
+  <link rel="icon" href="img/logo.png" type="image/png">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
   <div id="loader" aria-hidden="true">
-    <div class="loader-bulb">
-      <i class="fa-solid fa-building-columns"></i>
-    </div>
+    <img src="img/logo.png" alt="" class="loader-mark">
     <div class="loader-bar"><div class="loader-bar-fill"></div></div>
-    <span class="loader-text">Preparando experiencia...</span>
+    <span class="loader-text">Troja Residencial</span>
   </div>
 
   <header id="navbar" role="banner">
     <div class="container">
       <div class="nav-inner">
         <a href="#hero" class="nav-logo" aria-label="Troja Residencial - inicio">
-          <div class="nav-logo-icon" aria-hidden="true">
-            <i class="fa-solid fa-building-columns"></i>
-          </div>
+          <img src="img/logo.png" alt="Troja Residencial">
           <div class="nav-logo-copy">
             <span>Troja</span>
             <span>Residencial</span>
@@ -41,32 +39,29 @@
 
         <nav aria-label="Navegación principal">
           <ul class="nav-links">
-            <li><a href="#why">Diferencia</a></li>
-            <li><a href="#ambientes">Amenidades</a></li>
-            <li><a href="#proceso">Proceso</a></li>
-            <li><a href="#producto">Residencias</a></li>
+            <li><a href="#esencia">Esencia</a></li>
+            <li><a href="#modelos">Modelos</a></li>
+            <li><a href="#interiores">Interiores</a></li>
+            <li><a href="#zona">Ubicación</a></li>
             <li><a href="#contacto">Contacto</a></li>
           </ul>
         </nav>
 
-        <a href="#contacto" class="btn-gold nav-cta" style="font-size:13px; padding:12px 26px;">
-          Agendar visita
-        </a>
+        <a href="#contacto" class="btn btn-gold nav-cta btn-sm">Agendar visita</a>
 
-        <button class="hamburger" id="hamburger"
-                aria-label="Abrir menú" aria-expanded="false">
+        <button class="hamburger" id="hamburger" aria-label="Abrir menú" aria-expanded="false">
           <span></span><span></span><span></span>
         </button>
       </div>
     </div>
 
     <div id="mob-menu" aria-label="Menú móvil">
-      <a href="#why">Diferencia</a>
-      <a href="#ambientes">Amenidades</a>
-      <a href="#proceso">Proceso</a>
-      <a href="#producto">Residencias</a>
+      <a href="#esencia">Esencia</a>
+      <a href="#modelos">Modelos</a>
+      <a href="#interiores">Interiores</a>
+      <a href="#zona">Ubicación</a>
       <a href="#contacto">Contacto</a>
-      <a href="#contacto">Agendar visita privada -></a>
+      <a href="#contacto" class="mob-cta">Agendar visita privada →</a>
     </div>
   </header>
 
@@ -75,467 +70,430 @@
       <div class="hero-bg" aria-hidden="true"></div>
       <div class="hero-overlay" aria-hidden="true"></div>
       <div class="hero-vignette" aria-hidden="true"></div>
-      <div class="hero-grid" aria-hidden="true"></div>
       <canvas id="hero-canvas" aria-hidden="true"></canvas>
-
-      <div class="hero-rays" aria-hidden="true">
-        <div class="hero-ray r1"></div>
-        <div class="hero-ray r2"></div>
-        <div class="hero-ray r3"></div>
-        <div class="hero-ray r4"></div>
-        <div class="hero-ray r5"></div>
-      </div>
       <div class="hero-grain" aria-hidden="true"></div>
-      <div class="hero-scanline" aria-hidden="true"></div>
 
       <div class="container">
         <div class="hero-content">
-          <div class="hero-badge" id="hero-badge" aria-hidden="true">
+          <div class="hero-badge">
             <div class="badge-dot"></div>
-            Residencias premium · bienestar · diseño sostenible
+            Fraccionamiento cerrado · Sur de Juárez
           </div>
 
           <h1 class="hero-title" id="hero-heading">
-            <span class="line"><span>Troja</span></span>
-            <span class="line"><span>Residencial</span></span>
-            <span class="line"><span class="accent">Vive elevado.</span></span>
+            <span class="split-line" data-split>Troja</span>
+            <span class="split-line accent" data-split>Residencial</span>
           </h1>
 
-          <p class="hero-sub" id="hero-sub">
-            Desarrollamos y gestionamos residencias premium para quienes buscan <strong>calidad, privacidad y espacios personalizados</strong> en una comunidad diseñada alrededor del confort diario.
+          <p class="hero-sub">
+            Un desarrollo residencial excepcional para quienes buscan <strong>un hogar seguro y cómodo</strong>, cerca de su trabajo y de las personas que más quieren.
           </p>
 
-          <div class="hero-ctas" id="hero-ctas">
-            <a href="#contacto" class="btn-gold">
+          <div class="hero-ctas">
+            <a href="#contacto" class="btn btn-gold">
               Agendar visita privada
               <i class="fa-solid fa-arrow-right" style="font-size:12px;"></i>
             </a>
-            <a href="#ambientes" class="btn-outline">
-              <i class="fa-solid fa-house-chimney-window" style="font-size:15px; color:var(--gray);"></i>
-              Ver amenidades
+            <a href="#modelos" class="btn btn-outline">
+              <i class="fa-solid fa-house-chimney-window" style="font-size:15px;"></i>
+              Ver los modelos
             </a>
           </div>
 
-          <div class="hero-trust" id="hero-trust" aria-label="Credenciales">
-            <div class="trust-item">
-              <i class="fa-solid fa-pen-ruler"></i>
-              Arquitectura premium
-            </div>
+          <div class="hero-trust" aria-label="Datos clave">
+            <div class="trust-item"><i class="fa-solid fa-shield-halved"></i> Fraccionamiento cerrado</div>
             <div class="trust-divider" aria-hidden="true"></div>
-            <div class="trust-item">
-              <i class="fa-solid fa-spa"></i>
-              Bienestar integral
-            </div>
+            <div class="trust-item"><i class="fa-solid fa-layer-group"></i> 1 o 2 plantas</div>
             <div class="trust-divider" aria-hidden="true"></div>
-            <div class="trust-item">
-              <i class="fa-solid fa-leaf"></i>
-              Enfoque sostenible
-            </div>
+            <div class="trust-item"><i class="fa-solid fa-ruler-combined"></i> 112 – 168 m²</div>
           </div>
         </div>
       </div>
 
       <div class="scroll-cue" aria-hidden="true">
-        <div class="scroll-mouse">
-          <div class="scroll-mouse-dot"></div>
+        <span>Descubre más</span>
+        <div class="scroll-mouse"><div class="scroll-mouse-dot"></div></div>
+      </div>
+    </section>
+
+    <div class="ticker" aria-hidden="true">
+      <div class="ticker-inner" id="ticker"></div>
+    </div>
+
+    <section id="esencia" class="pad" aria-labelledby="esencia-heading">
+      <div class="container">
+        <div class="esencia-grid">
+          <div class="reveal">
+            <div class="label">La esencia de Troja</div>
+            <div class="quote-mark" aria-hidden="true">"</div>
+            <p class="esencia-quote" id="esencia-heading">
+              Un desarrollo inmobiliario excepcional para quienes buscan un hogar seguro y cómodo.
+            </p>
+          </div>
+          <div class="esencia-side reveal d2">
+            <p>Troja Residencial está pensado para todo tipo de familias: un fraccionamiento cerrado al sur de Juárez, ideal para quienes desean vivir cerca de su trabajo y de sus seres queridos, sin sacrificar privacidad ni diseño.</p>
+            <p>Elige entre casas de una o dos plantas, según tus necesidades, y disfruta de una amplia variedad de servicios y comodidades pensadas para el día a día.</p>
+            <div class="esencia-signoff">
+              <div class="line"></div>
+              <span>Troja Residencial · Sur de Juárez</span>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
-    <div class="marquee" aria-hidden="true">
-      <div class="marquee-inner" id="marquee"></div>
-    </div>
-
-    <section id="why" aria-labelledby="why-heading">
+    <section id="diferencia" class="pad" aria-labelledby="dif-heading">
       <div class="container">
-        <div class="why-header">
-          <div class="reveal">
-            <div class="label">La diferencia Troja</div>
-            <h2 class="why-quote" id="why-heading">
-              El lujo real no se impone.
-              <em> Se nota en cada decisión.</em>
-            </h2>
-          </div>
-          <p class="why-sub reveal d2">
-            Troja Residencial integra diseño arquitectónico, construcción precisa y gestión habitacional para crear hogares que se sienten exclusivos desde el primer recorrido.
-          </p>
+        <div class="dif-header reveal">
+          <div class="label">La diferencia Troja</div>
+          <h2 class="section-title" id="dif-heading">Todo lo que buscas en <span class="gold">un mismo lugar</span></h2>
         </div>
 
         <div class="features-grid">
           <div class="f-card reveal">
-            <div class="f-num" aria-hidden="true">01</div>
-            <div class="f-icon" aria-hidden="true">
-              <i class="fa-solid fa-drafting-compass"></i>
-            </div>
-            <h3>Diseño con intención</h3>
-            <p>Espacios pensados para amplitud, luz, flujo y una experiencia residencial elegante sin excesos.</p>
+            <div class="f-num">01</div>
+            <div class="f-icon"><i class="fa-solid fa-shield-halved"></i></div>
+            <h3>Fraccionamiento cerrado</h3>
+            <p>Un entorno resguardado, pensado para que tu familia viva con tranquilidad todos los días.</p>
           </div>
-
           <div class="f-card reveal d1">
-            <div class="f-num" aria-hidden="true">02</div>
-            <div class="f-icon" aria-hidden="true">
-              <i class="fa-solid fa-couch"></i>
-            </div>
-            <h3>Confort personalizado</h3>
-            <p>Acompañamos la adaptación de acabados, distribución y detalles para que cada residencia responda a tu estilo de vida.</p>
+            <div class="f-num">02</div>
+            <div class="f-icon"><i class="fa-solid fa-location-dot"></i></div>
+            <h3>Sur de Juárez</h3>
+            <p>Cerca de tu trabajo, de tus rutas cotidianas y de las personas que más quieres.</p>
           </div>
-
           <div class="f-card reveal d2">
-            <div class="f-num" aria-hidden="true">03</div>
-            <div class="f-icon" aria-hidden="true">
-              <i class="fa-solid fa-seedling"></i>
-            </div>
-            <h3>Sostenibilidad habitable</h3>
-            <p>Priorizamos materiales, operación eficiente y áreas que favorecen bienestar, calma y permanencia.</p>
+            <div class="f-num">03</div>
+            <div class="f-icon"><i class="fa-solid fa-drafting-compass"></i></div>
+            <h3>Diseño a tu medida</h3>
+            <p>Elige una o dos plantas y el modelo — Krakov o Moldava — que se ajuste a tu forma de vivir.</p>
           </div>
-
           <div class="f-card reveal d3">
-            <div class="f-num" aria-hidden="true">04</div>
-            <div class="f-icon" aria-hidden="true">
-              <i class="fa-solid fa-concierge-bell"></i>
-            </div>
-            <h3>Gestión residencial</h3>
-            <p>Más que vivienda: una comunidad con servicios, amenidades y atención consistente para el día a día.</p>
+            <div class="f-num">04</div>
+            <div class="f-icon"><i class="fa-solid fa-concierge-bell"></i></div>
+            <h3>Servicios y comodidades</h3>
+            <p>Una amplia variedad de comodidades pensadas para el día a día de cualquier tipo de familia.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="ambientes" aria-labelledby="amb-heading">
+    <div class="fixed-panel fixed-panel--exterior">
+      <div class="panel-content reveal">
+        <div class="label">Arquitectura Troja</div>
+        <p class="panel-quote">Diseñadas para todo tipo de familias.</p>
+        <p class="panel-sub">Fachadas contemporáneas, acabados cuidados y una distribución pensada para cada etapa de tu vida.</p>
+      </div>
+    </div>
+
+    <section id="modelos" class="pad" aria-labelledby="modelos-heading">
       <div class="container">
-        <div class="ambientes-top">
-          <div class="reveal">
-            <div class="label">Estilo de vida</div>
-            <h2 class="section-title" id="amb-heading">
-              Tres dimensiones de una vida<br>
-              <span class="gold">más cómoda y abundante</span>
-            </h2>
-            <p style="color:var(--gray); margin-top:16px; font-size:15.5px; max-width:440px; line-height:1.7;">
-              Residencias, amenidades y gestión se integran en una experiencia premium pensada para disfrutarse todos los días.
-            </p>
-          </div>
-          <div class="reveal d2">
-            <span class="ambiente-pill">Diseño · calma · comunidad</span>
-          </div>
+        <div class="modelos-header reveal">
+          <div class="label">Elige tu modelo</div>
+          <h2 class="section-title" id="modelos-heading">Dos formas de vivir, <span class="gold">un mismo estándar</span></h2>
         </div>
 
-        <div class="ambientes-grid">
-          <div class="amb-card reveal">
-            <img class="amb-img"
-              src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?q=80&w=1400&auto=format&fit=crop"
-              alt="Interior residencial premium con sala amplia y acabados elegantes">
-            <div class="amb-overlay">
-              <div class="amb-icon-wrap" aria-hidden="true">
-                <i class="fa-solid fa-house-chimney-window"></i>
+        <div class="modelos-list">
+          <article class="modelo-card reveal">
+            <div class="modelo-media">
+              <div class="media-frame" data-model="krakov">
+                <img src="img/render-krakov.png" alt="Fachada del modelo Krakov, casa de una planta" class="is-active" data-tab="fachada">
+                <img src="img/plano-krakov.png" alt="Plano arquitectónico del modelo Krakov" class="plano-img" data-tab="plano">
               </div>
-              <h3>Residencias a medida</h3>
-              <p>Distribuciones inteligentes, acabados seleccionados y espacios preparados para evolucionar contigo.</p>
-              <div class="amb-temp">Privacidad · amplitud · detalle</div>
+              <div class="media-tabs" data-tabs-for="krakov">
+                <button class="media-tab is-active" data-tab-btn="fachada">Fachada</button>
+                <button class="media-tab" data-tab-btn="plano">Plano</button>
+              </div>
+              <div class="media-badge"><span class="dot"></span> Planta baja</div>
             </div>
-          </div>
+            <div class="modelo-copy">
+              <div class="modelo-eyebrow">
+                <h3 class="modelo-name font-serif">Krakov</h3>
+                <span class="modelo-m2">112 m² de construcción</span>
+              </div>
+              <p class="modelo-tagline">Un modelo compacto y funcional, ideal para parejas o familias pequeñas que buscan comodidad en una sola planta.</p>
 
-          <div class="amb-card reveal d1">
-            <img class="amb-img"
-              src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?q=80&w=1400&auto=format&fit=crop"
-              alt="Área social residencial con diseño contemporáneo y vegetación">
-            <div class="amb-overlay">
-              <div class="amb-icon-wrap" aria-hidden="true">
-                <i class="fa-solid fa-water-ladder"></i>
-              </div>
-              <h3>Amenidades de bienestar</h3>
-              <p>Áreas sociales, descanso, convivencia y servicios que elevan la rutina sin salir de casa.</p>
-              <div class="amb-temp">Confort · descanso · convivencia</div>
-            </div>
-          </div>
+              <ul class="modelo-specs">
+                <li><i class="fa-solid fa-bed"></i> 2 recámaras</li>
+                <li><i class="fa-solid fa-bath"></i> 2 baños</li>
+                <li><i class="fa-solid fa-kitchen-set"></i> Cocina</li>
+                <li><i class="fa-solid fa-couch"></i> Sala</li>
+                <li><i class="fa-solid fa-utensils"></i> Comedor</li>
+                <li><i class="fa-solid fa-door-open"></i> Estancia</li>
+                <li><i class="fa-solid fa-shirt"></i> Lavandería</li>
+                <li><i class="fa-solid fa-car"></i> Cochera</li>
+              </ul>
 
-          <div class="amb-card reveal d2">
-            <img class="amb-img"
-              src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1400&auto=format&fit=crop"
-              alt="Fachada residencial contemporánea con arquitectura premium">
-            <div class="amb-overlay">
-              <div class="amb-icon-wrap" aria-hidden="true">
-                <i class="fa-solid fa-user-shield"></i>
+              <div class="modelo-facts">
+                <div class="modelo-fact"><strong>112</strong><span>m² construcción</span></div>
+                <div class="modelo-fact"><strong>1</strong><span>Planta</span></div>
+                <div class="modelo-fact"><strong>2 / 2</strong><span>Rec. / Baños</span></div>
               </div>
-              <h3>Gestión sin fricción</h3>
-              <p>Operación residencial cuidada, atención cercana y administración enfocada en preservar valor y tranquilidad.</p>
-              <div class="amb-temp">Atención · seguridad · plusvalía</div>
+
+              <div class="modelo-ctas">
+                <a href="https://wa.me/526561275928?text=Hola%2C%20me%20interesa%20el%20modelo%20Krakov%20de%20Troja%20Residencial.%20%C2%BFMe%20pueden%20dar%20m%C3%A1s%20informaci%C3%B3n%3F" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                  <i class="fa-brands fa-whatsapp"></i> Preguntar por Krakov
+                </a>
+                <a href="#contacto" class="btn btn-outline">Agendar visita</a>
+              </div>
             </div>
-          </div>
+          </article>
+
+          <article class="modelo-card rev reveal">
+            <div class="modelo-media">
+              <div class="media-frame" data-model="moldava">
+                <img src="img/exterior-real.jpg" alt="Fachada real del modelo Moldava, casa de dos plantas ya construida" class="is-active" data-tab="fachada">
+                <img src="img/plano-moldava.png" alt="Plano arquitectónico del modelo Moldava, planta baja y planta alta" class="plano-img" data-tab="plano">
+              </div>
+              <div class="media-tabs" data-tabs-for="moldava">
+                <button class="media-tab is-active" data-tab-btn="fachada">Fachada</button>
+                <button class="media-tab" data-tab-btn="plano">Plano</button>
+              </div>
+              <div class="media-badge"><span class="dot"></span> Planta baja y alta</div>
+            </div>
+            <div class="modelo-copy">
+              <div class="modelo-eyebrow">
+                <h3 class="modelo-name font-serif">Moldava</h3>
+                <span class="modelo-m2">168 m² de construcción</span>
+              </div>
+              <p class="modelo-tagline">Amplitud en dos niveles, con estudio y recámara principal, pensado para familias que buscan más espacio.</p>
+
+              <ul class="modelo-specs">
+                <li><i class="fa-solid fa-bed"></i> 3 recámaras</li>
+                <li><i class="fa-solid fa-bath"></i> 3 baños</li>
+                <li><i class="fa-solid fa-kitchen-set"></i> Cocina</li>
+                <li><i class="fa-solid fa-couch"></i> Sala</li>
+                <li><i class="fa-solid fa-utensils"></i> Comedor</li>
+                <li><i class="fa-solid fa-door-open"></i> Estancia</li>
+                <li><i class="fa-solid fa-book"></i> Estudio</li>
+                <li><i class="fa-solid fa-shirt"></i> Lavandería</li>
+              </ul>
+
+              <div class="modelo-facts">
+                <div class="modelo-fact"><strong>168</strong><span>m² construcción</span></div>
+                <div class="modelo-fact"><strong>2</strong><span>Plantas</span></div>
+                <div class="modelo-fact"><strong>3 / 3</strong><span>Rec. / Baños</span></div>
+              </div>
+
+              <div class="modelo-ctas">
+                <a href="https://wa.me/526561501893?text=Hola%2C%20me%20interesa%20el%20modelo%20Moldava%20de%20Troja%20Residencial.%20%C2%BFMe%20pueden%20dar%20m%C3%A1s%20informaci%C3%B3n%3F" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                  <i class="fa-brands fa-whatsapp"></i> Preguntar por Moldava
+                </a>
+                <a href="#contacto" class="btn btn-outline">Agendar visita</a>
+              </div>
+            </div>
+          </article>
         </div>
       </div>
     </section>
 
-    <section id="proceso" aria-labelledby="proceso-heading">
+    <section id="interiores" class="pad" aria-labelledby="int-heading">
       <div class="container">
-        <div class="proceso-header reveal">
-          <div class="label">Cómo trabajamos</div>
-          <h2 class="section-title" id="proceso-heading">
-            De la visión al hogar, con <span class="gold">acompañamiento experto</span>
-          </h2>
-          <p>Un proceso claro para entender tus prioridades, presentar opciones y cuidar cada detalle antes, durante y después de la entrega.</p>
+        <div class="gallery-header reveal">
+          <div class="label">Recorre Troja</div>
+          <h2 class="section-title" id="int-heading">Cada espacio, pensado <span class="gold">para vivir mejor</span></h2>
         </div>
 
-        <div class="proceso-grid">
-          <div class="proceso-step reveal">
-            <div class="step-number">Paso 01</div>
-            <h3>Consulta privada</h3>
-            <p>Conocemos tu estilo de vida, necesidades de espacio, tiempos y expectativas de inversión.</p>
+        <div class="gallery-grid" id="gallery">
+          <div class="g-item g-big" data-caption="Cocina integral con cubierta tipo mármol y acabados en madera">
+            <img src="img/cocina.jpg" alt="Cocina integral con cubierta tipo mármol y acabados en madera" loading="lazy">
+            <span class="g-expand"><i class="fa-solid fa-expand"></i></span>
+            <span class="g-caption">Cocina integral</span>
           </div>
-
-          <div class="proceso-step reveal d1">
-            <div class="step-number">Paso 02</div>
-            <h3>Curaduría residencial</h3>
-            <p>Presentamos alternativas, amenidades y posibilidades de personalización alineadas con tu forma de vivir.</p>
+          <div class="g-item" data-caption="Sala principal con luz natural">
+            <img src="img/sala-1.jpg" alt="Sala principal con luz natural" loading="lazy">
+            <span class="g-expand"><i class="fa-solid fa-expand"></i></span>
+            <span class="g-caption">Sala principal</span>
           </div>
-
-          <div class="proceso-step reveal d2">
-            <div class="step-number">Paso 03</div>
-            <h3>Entrega y gestión</h3>
-            <p>Coordinamos la transición a tu residencia y mantenemos una operación enfocada en bienestar, servicio y valor.</p>
+          <div class="g-item" data-caption="Comedor amplio junto a la escalera">
+            <img src="img/comedor.jpg" alt="Comedor amplio junto a la escalera" loading="lazy">
+            <span class="g-expand"><i class="fa-solid fa-expand"></i></span>
+            <span class="g-caption">Comedor</span>
           </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="producto" aria-labelledby="prod-heading">
-      <div class="container">
-        <div class="producto-wrap">
-          <div class="reveal">
-            <div class="label">Residencia destacada</div>
-            <h2 class="section-title" id="prod-heading">
-              Hogares premium diseñados<br>
-              <span class="gold">para vivir mejor</span>
-            </h2>
-            <p class="producto-lead">
-              Cada residencia Troja combina arquitectura contemporánea, materiales seleccionados y servicios pensados para que el lujo se sienta natural, cómodo y funcional.
-            </p>
-
-            <ul class="feature-rows" aria-label="Características de las residencias Troja">
-              <li class="f-row">
-                <div class="f-row-icon" aria-hidden="true"><i class="fa-solid fa-ruler-combined"></i></div>
-                <div>
-                  <h4>Distribuciones inteligentes</h4>
-                  <p>Plantas diseñadas para aprovechar luz, circulación y privacidad en cada zona.</p>
-                </div>
-              </li>
-              <li class="f-row">
-                <div class="f-row-icon" aria-hidden="true"><i class="fa-solid fa-gem"></i></div>
-                <div>
-                  <h4>Acabados premium</h4>
-                  <p>Materiales, texturas y detalles seleccionados para un lenguaje elegante y duradero.</p>
-                </div>
-              </li>
-              <li class="f-row">
-                <div class="f-row-icon" aria-hidden="true"><i class="fa-solid fa-spa"></i></div>
-                <div>
-                  <h4>Amenidades integradas</h4>
-                  <p>Espacios de bienestar, convivencia y servicio que expanden la experiencia del hogar.</p>
-                </div>
-              </li>
-              <li class="f-row">
-                <div class="f-row-icon" aria-hidden="true"><i class="fa-solid fa-leaf"></i></div>
-                <div>
-                  <h4>Operación consciente</h4>
-                  <p>Soluciones enfocadas en eficiencia, mantenimiento inteligente y bienestar ambiental.</p>
-                </div>
-              </li>
-            </ul>
-
-            <div class="specs-bar" role="list" aria-label="Pilares de valor">
-              <div class="spec-cell" role="listitem">
-                <span class="spec-val">Premium</span>
-                <span class="spec-name">Diseño</span>
-              </div>
-              <div class="spec-cell" role="listitem">
-                <span class="spec-val">A medida</span>
-                <span class="spec-name">Espacios</span>
-              </div>
-              <div class="spec-cell" role="listitem">
-                <span class="spec-val">Wellness</span>
-                <span class="spec-name">Amenidades</span>
-              </div>
-              <div class="spec-cell" role="listitem">
-                <span class="spec-val">Sostenible</span>
-                <span class="spec-name">Gestión</span>
-              </div>
-            </div>
+          <div class="g-item" data-caption="Recámara principal">
+            <img src="img/recamara-principal.jpg" alt="Recámara principal" loading="lazy">
+            <span class="g-expand"><i class="fa-solid fa-expand"></i></span>
+            <span class="g-caption">Recámara principal</span>
           </div>
-
-          <div class="reveal d2">
-            <div class="panel-scene">
-              <div class="led-panel-body"
-                   role="img" aria-label="Residencia premium Troja con arquitectura contemporánea">
-              </div>
-              <div class="p-badge pb-tl" aria-hidden="true">
-                <div class="p-badge-dot"></div>
-                Residencias · diseño personalizado
-              </div>
-              <div class="p-badge pb-br" aria-hidden="true">
-                <i class="fa-solid fa-key" style="color:var(--gold);"></i>
-                Amenidades premium
-              </div>
-            </div>
+          <div class="g-item" data-caption="Escalera de acceso a planta alta">
+            <img src="img/escalera.jpg" alt="Escalera de acceso a planta alta" loading="lazy">
+            <span class="g-expand"><i class="fa-solid fa-expand"></i></span>
+            <span class="g-caption">Escalera</span>
+          </div>
+          <div class="g-item g-wide" data-caption="Mezzanine y sala de estar en planta alta">
+            <img src="img/mezzanine.jpg" alt="Mezzanine y sala de estar en planta alta" loading="lazy">
+            <span class="g-expand"><i class="fa-solid fa-expand"></i></span>
+            <span class="g-caption">Mezzanine planta alta</span>
+          </div>
+          <div class="g-item" data-caption="Recámara secundaria">
+            <img src="img/recamara-2.jpg" alt="Recámara secundaria" loading="lazy">
+            <span class="g-expand"><i class="fa-solid fa-expand"></i></span>
+            <span class="g-caption">Recámara secundaria</span>
+          </div>
+          <div class="g-item" data-caption="Baño completo">
+            <img src="img/bano-1.jpg" alt="Baño completo" loading="lazy">
+            <span class="g-expand"><i class="fa-solid fa-expand"></i></span>
+            <span class="g-caption">Baño completo</span>
+          </div>
+          <div class="g-item" data-caption="Closet y área de vestidor">
+            <img src="img/closet.jpg" alt="Closet y área de vestidor" loading="lazy">
+            <span class="g-expand"><i class="fa-solid fa-expand"></i></span>
+            <span class="g-caption">Closet</span>
+          </div>
+          <div class="g-item" data-caption="Sala de estar en planta alta">
+            <img src="img/sala-2.jpg" alt="Sala de estar en planta alta" loading="lazy">
+            <span class="g-expand"><i class="fa-solid fa-expand"></i></span>
+            <span class="g-caption">Sala de estar</span>
+          </div>
+          <div class="g-item" data-caption="Baño secundario">
+            <img src="img/bano-2.jpg" alt="Baño secundario" loading="lazy">
+            <span class="g-expand"><i class="fa-solid fa-expand"></i></span>
+            <span class="g-caption">Baño secundario</span>
+          </div>
+          <div class="g-item" data-caption="Pasillo de distribución en planta alta">
+            <img src="img/pasillo-plantas.jpg" alt="Pasillo de distribución en planta alta" loading="lazy">
+            <span class="g-expand"><i class="fa-solid fa-expand"></i></span>
+            <span class="g-caption">Pasillo</span>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="stats" aria-label="Estadísticas clave">
+    <div class="fixed-panel fixed-panel--patio">
+      <div class="panel-content reveal">
+        <div class="label">Vida al aire libre</div>
+        <p class="panel-quote">Tu propio espacio para disfrutar en familia.</p>
+        <p class="panel-sub">Patio y jardín privado, listos para convertirse en el rincón favorito de tu casa.</p>
+      </div>
+    </div>
+
+    <section id="stats" aria-label="Datos clave de Troja Residencial">
       <div class="container">
         <div class="stats-grid reveal" role="list">
           <div class="stat-cell" role="listitem">
-            <div class="stat-num"
-                 data-count="4" data-suffix=""
-                 aria-label="4 pilares">0</div>
-            <div class="stat-lbl">Pilares de<br>experiencia</div>
+            <div class="stat-num" data-count="2" data-suffix="">0</div>
+            <div class="stat-lbl">Modelos<br>de casa</div>
           </div>
-
           <div class="stat-cell" role="listitem">
-            <div class="stat-num"
-                 data-count="360" data-suffix="°"
-                 aria-label="360 grados">0</div>
-            <div class="stat-lbl">Gestión<br>residencial</div>
+            <div class="stat-num" data-count="168" data-suffix="">0</div>
+            <div class="stat-lbl">m² máx. de<br>construcción</div>
           </div>
-
           <div class="stat-cell" role="listitem">
-            <div class="stat-num"
-                 data-count="3" data-suffix=""
-                 aria-label="3 dimensiones">0</div>
-            <div class="stat-lbl">Dimensiones<br>de bienestar</div>
+            <div class="stat-num" data-count="3" data-suffix="">0</div>
+            <div class="stat-lbl">Recámaras<br>máximo</div>
           </div>
-
           <div class="stat-cell" role="listitem">
-            <div class="stat-num"
-                 data-count="1" data-suffix=" comunidad"
-                 aria-label="1 comunidad">0</div>
-            <div class="stat-lbl">Vida con<br>sentido</div>
+            <div class="stat-num" data-count="1" data-suffix="">0</div>
+            <div class="stat-lbl">Fraccionamiento<br>cerrado</div>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="sectores" aria-labelledby="sec-heading">
+    <section id="zona" class="pad" aria-labelledby="zona-heading">
       <div class="container">
-        <div class="sectores-hdr reveal">
-          <div class="label">Pensado para</div>
-          <h2 class="section-title" id="sec-heading">
-            Personas que buscan <span class="gold">más que una dirección</span>
-          </h2>
-          <p>Troja está orientado a quienes valoran calidad, bienestar, privacidad y una comunidad residencial bien gestionada.</p>
-        </div>
-
-        <div class="sectores-grid" role="list">
-          <div class="sector-card reveal" role="listitem">
-            <i class="fa-solid fa-briefcase sector-icon" aria-hidden="true"></i>
-            <h3>Profesionales</h3>
-          </div>
-          <div class="sector-card reveal d1" role="listitem">
-            <i class="fa-solid fa-people-roof sector-icon" aria-hidden="true"></i>
-            <h3>Familias</h3>
-          </div>
-          <div class="sector-card reveal d2" role="listitem">
-            <i class="fa-solid fa-chart-line sector-icon" aria-hidden="true"></i>
-            <h3>Inversionistas</h3>
-          </div>
-          <div class="sector-card reveal d3" role="listitem">
-            <i class="fa-solid fa-heart-pulse sector-icon" aria-hidden="true"></i>
-            <h3>Bienestar</h3>
-          </div>
-          <div class="sector-card reveal d4" role="listitem">
-            <i class="fa-solid fa-user-lock sector-icon" aria-hidden="true"></i>
-            <h3>Privacidad</h3>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="contacto" aria-labelledby="contact-heading">
-      <div class="container">
-        <div class="contact-hdr reveal">
-          <div class="label">Contacto</div>
-          <h2 class="section-title" id="contact-heading">
-            Hablemos de <span class="gold">tu próxima residencia</span>
-          </h2>
-          <p>Agenda una conversación privada y recibe orientación personalizada sobre disponibilidad, amenidades y opciones de personalización.</p>
-        </div>
-
-        <div class="contact-box reveal">
-          <div class="contact-info">
-            <h3>Atención personalizada</h3>
-            <p class="ci-sub">Un equipo listo para acompañarte con discreción, claridad y servicio de alto nivel.</p>
-
-            <ul class="ci-list">
-              <li class="ci-item">
-                <div class="ci-icon" aria-hidden="true">
-                  <i class="fa-solid fa-location-dot"></i>
-                </div>
-                <div class="ci-body">
-                  <h4>Ubicación</h4>
-                  <p>Desarrollo residencial premium.<br>
-                     Agenda una visita para conocer<br>
-                     disponibilidad y recorridos privados.</p>
-                </div>
-              </li>
-              <li class="ci-item">
-                <div class="ci-icon" aria-hidden="true">
-                  <i class="fa-solid fa-phone"></i>
-                </div>
-                <div class="ci-body">
-                  <h4>Teléfono</h4>
-                  <p>
-                    <a href="tel:0000000000">000 000 0000</a><br>
-                    <a href="tel:0000000000">000 000 0000</a>
-                  </p>
-                </div>
-              </li>
-              <li class="ci-item">
-                <div class="ci-icon" aria-hidden="true">
-                  <i class="fa-brands fa-whatsapp"></i>
-                </div>
-                <div class="ci-body">
-                  <h4>WhatsApp</h4>
-                  <p>Escríbenos para coordinar una visita privada.</p>
-                  <a href="https://wa.me/520000000000" target="_blank"
-                     rel="noopener noreferrer" class="ci-wa-link">
-                    Abrir chat ->
-                  </a>
-                </div>
-              </li>
+        <div class="zona-grid">
+          <div class="zona-copy reveal">
+            <div class="label">Ubicación</div>
+            <h2 class="section-title" id="zona-heading">Vive en el sur de Juárez,<br><span class="gold">cerca de todo lo que importa</span></h2>
+            <p>Troja Residencial se ubica al sur de Ciudad Juárez, en una zona pensada para quienes quieren estar cerca de su trabajo y de su familia, con la tranquilidad de un fraccionamiento cerrado.</p>
+            <ul class="zona-list">
+              <li><i class="fa-solid fa-lock"></i> Acceso controlado y fraccionamiento cerrado</li>
+              <li><i class="fa-solid fa-briefcase"></i> Cerca de tu trabajo y rutas cotidianas</li>
+              <li><i class="fa-solid fa-people-roof"></i> A minutos de tus familiares y seres queridos</li>
+              <li><i class="fa-solid fa-road"></i> Sur de Juárez, zona en crecimiento</li>
             </ul>
+            <div class="zona-ctas">
+              <a href="https://wa.me/526561275928?text=Hola%2C%20me%20gustar%C3%ADa%20conocer%20la%20ubicaci%C3%B3n%20exacta%20de%20Troja%20Residencial." target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                <i class="fa-brands fa-whatsapp"></i> Pedir ubicación exacta
+              </a>
+            </div>
+          </div>
+          <div class="zona-media reveal d2">
+            <img src="img/hero-street.jpg" alt="Vista de calle del fraccionamiento Troja Residencial">
+            <div class="zona-media-tag">Troja Residencial · Sur de Juárez</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contacto" class="pad" aria-labelledby="contact-heading">
+      <div class="container">
+        <div class="contact-header reveal">
+          <div class="label">Contacto</div>
+          <h2 class="section-title" id="contact-heading">Agenda tu cita y conoce <span class="gold">tu nuevo hogar</span></h2>
+        </div>
+
+        <div class="contact-grid">
+          <div class="agents-col reveal">
+            <div class="agent-card">
+              <div class="agent-top">
+                <div class="agent-avatar">MJ</div>
+                <div>
+                  <div class="agent-name">Margarita Juárez</div>
+                  <div class="agent-role">Ventas</div>
+                </div>
+              </div>
+              <div class="agent-actions">
+                <a href="tel:+526561275928" class="btn btn-outline btn-sm"><i class="fa-solid fa-phone"></i> Llamar</a>
+                <a href="https://wa.me/526561275928?text=Hola%20Margarita%2C%20visit%C3%A9%20el%20sitio%20de%20Troja%20Residencial%20y%20me%20gustar%C3%ADa%20recibir%20informaci%C3%B3n." target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+              </div>
+            </div>
+            <div class="agent-card">
+              <div class="agent-top">
+                <div class="agent-avatar">JA</div>
+                <div>
+                  <div class="agent-name">Julio Arias</div>
+                  <div class="agent-role">Ventas</div>
+                </div>
+              </div>
+              <div class="agent-actions">
+                <a href="tel:+526561501893" class="btn btn-outline btn-sm"><i class="fa-solid fa-phone"></i> Llamar</a>
+                <a href="https://wa.me/526561501893?text=Hola%20Julio%2C%20visit%C3%A9%20el%20sitio%20de%20Troja%20Residencial%20y%20me%20gustar%C3%ADa%20recibir%20informaci%C3%B3n." target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+              </div>
+            </div>
+            <p class="info-note"><strong>Agenda tu cita</strong> para conocer tu nuevo y próximo hogar. Te acompañamos para elegir el modelo — Krakov o Moldava — que mejor se ajuste a tu familia.</p>
           </div>
 
-          <div class="contact-form-wrap">
+          <div class="contact-form-wrap reveal d2">
             <h3>Solicitar información</h3>
+            <p>Cuéntanos qué buscas y te contactamos por WhatsApp.</p>
             <form id="wa-form" novalidate>
               <div class="form-row">
                 <div class="form-group">
                   <label class="form-label" for="f-name">Nombre completo</label>
-                  <input type="text" id="f-name" class="form-control"
-                         placeholder="Ej. Nombre Apellido" required autocomplete="name">
+                  <input type="text" id="f-name" class="form-control" placeholder="Ej. Nombre Apellido" required autocomplete="name">
                 </div>
                 <div class="form-group">
-                  <label class="form-label" for="f-interest">¿Qué te interesa?</label>
-                  <select id="f-interest" class="form-control">
-                    <option>Agendar visita privada</option>
-                    <option>Disponibilidad de residencias</option>
-                    <option>Opciones de personalización</option>
-                    <option>Amenidades y servicios</option>
-                    <option>Información para inversión</option>
+                  <label class="form-label" for="f-model">Modelo de interés</label>
+                  <select id="f-model" class="form-control">
+                    <option>Krakov (112 m²)</option>
+                    <option>Moldava (168 m²)</option>
+                    <option>Aún no estoy seguro</option>
                   </select>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label class="form-label" for="f-agent">Contactar a</label>
+                  <select id="f-agent" class="form-control">
+                    <option value="526561275928">Margarita Juárez</option>
+                    <option value="526561501893">Julio Arias</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="f-phone">Tu teléfono (opcional)</label>
+                  <input type="tel" id="f-phone" class="form-control" placeholder="(656) 000 0000" autocomplete="tel">
                 </div>
               </div>
               <div class="form-group">
                 <label class="form-label" for="f-msg">Mensaje</label>
-                <textarea id="f-msg" class="form-control" rows="4" required
-                          placeholder="Cuéntanos qué tipo de residencia buscas, tiempos y cualquier preferencia importante."></textarea>
+                <textarea id="f-msg" class="form-control" rows="4" required placeholder="Cuéntanos qué modelo te interesa, tiempos y cualquier duda que tengas."></textarea>
               </div>
-              <button type="submit" class="form-submit">
-                <i class="fa-brands fa-whatsapp"></i>
-                Enviar a WhatsApp
+              <button type="submit" class="btn btn-primary btn-block">
+                <i class="fa-brands fa-whatsapp"></i> Enviar a WhatsApp
               </button>
-              <p class="form-note">
-                Al enviar serás redirigido a WhatsApp para continuar la conversación.
-              </p>
+              <p class="form-note">Al enviar serás redirigido a WhatsApp para continuar la conversación.</p>
             </form>
           </div>
         </div>
@@ -546,34 +504,38 @@
   <footer role="contentinfo">
     <div class="container">
       <div class="footer-inner">
-        <div class="footer-logo">
-          <i class="fa-solid fa-building-columns"></i>
-          <span>Troja Residencial.</span>
+        <div class="footer-brand">
+          <img src="img/logo.png" alt="Troja Residencial">
+          <div class="footer-brand-copy">
+            <span>Troja</span>
+            <span>Residencial</span>
+          </div>
         </div>
-        <p class="footer-copy">
-          &copy; <span id="year"></span> Troja Residencial. Todos los derechos reservados.
-        </p>
-        <div class="footer-socials">
-          <a href="#contacto" class="footer-soc" aria-label="Instagram">
-            <i class="fa-brands fa-instagram"></i>
-          </a>
-          <a href="#contacto" class="footer-soc" aria-label="Facebook">
-            <i class="fa-brands fa-facebook-f"></i>
-          </a>
-          <a href="https://wa.me/520000000000" target="_blank"
-             rel="noopener noreferrer" class="footer-soc" aria-label="WhatsApp">
-            <i class="fa-brands fa-whatsapp"></i>
-          </a>
+        <div class="footer-contacts">
+          <a href="tel:+526561275928"><i class="fa-solid fa-phone"></i> Margarita Juárez</a>
+          <a href="tel:+526561501893"><i class="fa-solid fa-phone"></i> Julio Arias</a>
+        </div>
+        <div class="footer-copy">
+          &copy; <span id="year"></span> Troja Residencial · Fraccionamiento cerrado, sur de Juárez. Todos los derechos reservados.
         </div>
       </div>
     </div>
   </footer>
 
-  <a href="https://wa.me/520000000000?text=Hola%2C%20visit%C3%A9%20el%20sitio%20de%20Troja%20Residencial%20y%20me%20gustar%C3%ADa%20recibir%20informaci%C3%B3n."
-     target="_blank" rel="noopener noreferrer"
-     class="wa-btn" aria-label="Contactar por WhatsApp">
+  <a href="https://wa.me/526561275928?text=Hola%2C%20visit%C3%A9%20el%20sitio%20de%20Troja%20Residencial%20y%20me%20gustar%C3%ADa%20recibir%20informaci%C3%B3n."
+     target="_blank" rel="noopener noreferrer" class="wa-btn" aria-label="Contactar por WhatsApp">
     <i class="fa-brands fa-whatsapp"></i>
   </a>
+
+  <div id="lightbox" role="dialog" aria-modal="true" aria-label="Vista ampliada">
+    <div class="lightbox-inner">
+      <button class="lightbox-close" id="lb-close" aria-label="Cerrar"><i class="fa-solid fa-xmark"></i></button>
+      <button class="lightbox-nav lightbox-prev" id="lb-prev" aria-label="Anterior"><i class="fa-solid fa-chevron-left"></i></button>
+      <img id="lb-img" src="" alt="">
+      <button class="lightbox-nav lightbox-next" id="lb-next" aria-label="Siguiente"><i class="fa-solid fa-chevron-right"></i></button>
+      <p class="lightbox-caption" id="lb-caption"></p>
+    </div>
+  </div>
 
   <script src="js/main.js" defer></script>
 </body>
