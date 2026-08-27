@@ -95,8 +95,8 @@ section.pad { padding: 128px 0; }
 }
 #loader.is-hidden { opacity: 0; visibility: hidden; }
 .loader-mark {
-  width: 56px;
-  height: 56px;
+  width: 104px;
+  height: 104px;
   margin-inline: auto;
   object-fit: contain;
   opacity: 0.92;
@@ -133,8 +133,8 @@ section.pad { padding: 128px 0; }
 .nav-inner { display: flex; align-items: center; justify-content: space-between; gap: 22px; }
 .nav-logo { display: inline-flex; align-items: center; gap: 12px; min-width: max-content; }
 .nav-logo img {
-  height: 34px; width: auto;
-  padding: 6px 9px;
+  height: 52px; width: auto;
+  padding: 7px 11px;
   background: var(--paper);
   border-radius: 8px;
   box-shadow: 0 6px 18px rgba(10, 12, 9, 0.18);
