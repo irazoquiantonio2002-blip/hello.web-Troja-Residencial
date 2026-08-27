@@ -458,6 +458,19 @@ section.pad { padding: 128px 0; }
 }
 .media-badge .dot { width: 6px; height: 6px; border-radius: 50%; background: var(--gold-2); }
 
+.status-pill {
+  position: absolute; top: 16px; right: 16px; z-index: 2;
+  padding: 8px 14px;
+  font-size: 11px; font-weight: 700; letter-spacing: 0.07em; text-transform: uppercase;
+  border-radius: 999px;
+  color: var(--ivory);
+  box-shadow: 0 10px 24px rgba(20, 24, 20, 0.25);
+}
+.status-pill--sold { background: #9c4a3a; }
+.status-pill--highlight { background: var(--green); }
+
+#modelo-moldava { scroll-margin-top: 130px; }
+
 .modelo-eyebrow { display: flex; align-items: baseline; gap: 14px; flex-wrap: wrap; }
 .modelo-name { font-family: "Cormorant Garamond", serif; font-size: clamp(32px, 3.6vw, 46px); font-weight: 400; color: var(--ink); }
 .modelo-m2 { color: var(--gold); font-weight: 700; font-size: 14px; letter-spacing: 0.04em; }
