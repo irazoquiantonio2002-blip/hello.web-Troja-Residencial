@@ -477,7 +477,9 @@ section.pad { padding: 128px 0; }
    Gallery
    ========================================================================== */
 #interiores { background: var(--sand); }
+#comunidad { background: var(--paper); }
 .gallery-header { max-width: 680px; }
+.section-lead { margin-top: 18px; color: var(--ink-soft); font-size: 16px; line-height: 1.75; max-width: 620px; }
 .gallery-grid {
   margin-top: 64px;
   display: grid;
@@ -540,7 +542,9 @@ section.pad { padding: 128px 0; }
 .zona-list li { display: flex; align-items: flex-start; gap: 14px; font-size: 15px; color: var(--ink); }
 .zona-list i { color: var(--gold); margin-top: 3px; }
 .zona-ctas { margin-top: 32px; }
+.zona-visuals { display: grid; gap: 20px; }
 .zona-media { position: relative; border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow-lg); aspect-ratio: 4/5; }
+.zona-visuals .zona-media { aspect-ratio: 16 / 10; }
 .zona-media img { width: 100%; height: 100%; object-fit: cover; }
 .zona-media-tag {
   position: absolute; left: 16px; bottom: 16px;
@@ -550,6 +554,21 @@ section.pad { padding: 128px 0; }
   font-size: 12px; font-weight: 700;
   border-radius: var(--radius);
 }
+.map-frame {
+  position: relative;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+  aspect-ratio: 16 / 11;
+  background: var(--sand);
+}
+.map-frame iframe {
+  position: absolute; inset: 0;
+  width: 100%; height: 100%; border: 0;
+  filter: grayscale(0.3) contrast(1.05) brightness(1.02);
+  transition: filter 0.4s ease;
+}
+.map-frame:hover iframe, .map-frame:focus-within iframe { filter: none; }
 
 /* ==========================================================================
    Contacto
